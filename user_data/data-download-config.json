@@ -1,0 +1,22 @@
+{
+    "pairs": [
+        "BNB/USDT",
+        "BTC/USDT",
+        "ETH/USDT",
+        "XRP/USDT",
+        "ADA/USDT",
+        "DOGE/USDT",
+        "SOL/USDT"
+    ],
+    "exchange": {
+        "name": "binance",
+        "key": "",
+        "secret": "",
+        "ccxt_config": {},
+        "ccxt_async_config": {},
+        "pair_whitelist": []
+    },
+    "timeframes": ["1m", "5m"],
+    "datadir": "user_data/data/binance",
+    "timerange": "20220101-"
+} 
