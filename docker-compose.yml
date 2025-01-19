@@ -8,6 +8,11 @@ services:
     volumes:
       - "./user_data:/freqtrade/user_data"
     command: >
-      download-data
-      --config /freqtrade/user_data/data-download-config.json
-      --timerange 20230701-
+      backtesting
+      --config /freqtrade/user_data/config.json
+      --strategy DS_Green_5m
+      --timeframe 5m
+      --timerange 20240101-
+      --breakdown month
+      --enable-position-stacking
+      -v

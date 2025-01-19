@@ -1,22 +1,23 @@
 {
     "pairs": [
-        "BNB/USDT",
-        "BTC/USDT",
-        "ETH/USDT",
-        "XRP/USDT",
-        "ADA/USDT",
-        "DOGE/USDT",
-        "SOL/USDT"
+        "DOGE/USDT:USDT",
+        "SOL/USDT:USDT",
+        "BTC/USDT:USDT"
     ],
     "exchange": {
         "name": "binance",
         "key": "",
         "secret": "",
-        "ccxt_config": {},
-        "ccxt_async_config": {},
-        "pair_whitelist": []
+        "ccxt_config": {
+            "options": {
+                "defaultType": "swap"
+            }
+        },
+        "ccxt_async_config": {}
     },
-    "timeframes": ["1m", "5m"],
+    "timeframes": ["1m", "5m", "1h", "8h"],
     "datadir": "user_data/data/binance",
-    "timerange": "20220101-"
+    "data_format": "feather",
+    "trading_mode": "futures",
+    "timerange": "20240101-"
 } 
